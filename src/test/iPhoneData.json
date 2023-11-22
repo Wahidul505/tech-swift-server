@@ -1,0 +1,306 @@
+[
+  {
+    "title": "iPhone 11",
+    "image": "https://i.ibb.co/J77jWT6/11-2.jpg",
+    "price": 999.99,
+    "details": {
+      "model": "11",
+      "display": "6.1 inches Liquid Retina",
+      "processor": "A13 Bionic",
+      "camera": "12 MP dual",
+      "ram": "4 GB",
+      "storage": "128 GB"
+    },
+    "features": ["Night mode", "Ultra-Wide camera"],
+    "colors": ["Green", "Black"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 12",
+    "image": "https://i.ibb.co/nLhH2fs/12.jpg",
+    "price": 1299.99,
+    "details": {
+      "model": "12",
+      "display": "6.1 inches Super Retina XDR",
+      "processor": "A14 Bionic",
+      "camera": "12 MP dual",
+      "ram": "4 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Ceramic Shield", "5G capable"],
+    "colors": ["Blue", "Gold"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone SE (2nd generation)",
+    "image": "https://i.ibb.co/PrwCcKb/se.jpg",
+    "price": 499.99,
+    "details": {
+      "model": "SE (2nd gen)",
+      "display": "4.7 inches Retina HD",
+      "processor": "A13 Bionic",
+      "camera": "12 MP single",
+      "ram": "3 GB",
+      "storage": "128 GB"
+    },
+    "features": ["Touch ID", "Compact design"],
+    "colors": ["Product(RED)", "White"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone XS",
+    "image": "https://i.ibb.co/kq651ST/xs.jpg",
+    "price": 899.99,
+    "details": {
+      "model": "XS",
+      "display": "5.8 inches Super Retina",
+      "processor": "A12 Bionic",
+      "camera": "12 MP dual",
+      "ram": "4 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Face ID", "Dual SIM"],
+    "colors": ["Gold", "Silver"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 13",
+    "image": "https://i.ibb.co/NSnt4zZ/13-2.jpg",
+    "price": 1499.99,
+    "details": {
+      "model": "13",
+      "display": "6.1 inches Super Retina XDR",
+      "processor": "A15 Bionic",
+      "camera": "12 MP dual",
+      "ram": "6 GB",
+      "storage": "512 GB"
+    },
+    "features": ["ProMotion technology", "Cinematic mode"],
+    "colors": ["Pink", "Graphite"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 8",
+    "image": "https://i.ibb.co/kXR20dw/8.jpg",
+    "price": 699.99,
+    "details": {
+      "model": "8",
+      "display": "4.7 inches Retina HD",
+      "processor": "A11 Bionic",
+      "camera": "12 MP single",
+      "ram": "2 GB",
+      "storage": "64 GB"
+    },
+    "features": ["Touch ID", "Wireless charging"],
+    "colors": ["Space Gray", "Rose Gold"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone XR",
+    "image": "https://i.ibb.co/Pj7zncG/xr2.jpg",
+    "price": 799.99,
+    "details": {
+      "model": "XR",
+      "display": "6.1 inches Liquid Retina",
+      "processor": "A12 Bionic",
+      "camera": "12 MP single",
+      "ram": "3 GB",
+      "storage": "128 GB"
+    },
+    "features": ["Liquid Retina display", "Face ID"],
+    "colors": ["Blue", "Yellow"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 13 Pro",
+    "image": "https://i.ibb.co/C10zzjf/13-pro.jpg",
+    "price": 1699.99,
+    "details": {
+      "model": "13 Pro",
+      "display": "6.1 inches Super Retina XDR",
+      "processor": "A15 Bionic",
+      "camera": "12 MP triple",
+      "ram": "6 GB",
+      "storage": "1 TB"
+    },
+    "features": ["ProMotion technology", "LiDAR scanner"],
+    "colors": ["Silver", "Pacific Blue"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 12 Mini",
+    "image": "https://i.ibb.co/ctFzgvX/12-mini.jpg",
+    "price": 1099.99,
+    "details": {
+      "model": "12 Mini",
+      "display": "5.4 inches Super Retina XDR",
+      "processor": "A14 Bionic",
+      "camera": "12 MP dual",
+      "ram": "4 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Compact design", "5G capable"],
+    "colors": ["Black", "White"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 15",
+    "image": "https://i.ibb.co/j5Ldm8X/15.jpg",
+    "price": 1799.99,
+    "details": {
+      "model": "15",
+      "display": "6.7 inches ProMotion XDR",
+      "processor": "A16 Bionic",
+      "camera": "16 MP triple",
+      "ram": "8 GB",
+      "storage": "1 TB"
+    },
+    "features": ["ProMotion technology", "LiDAR scanner", "Ceramic Shield"],
+    "colors": ["Graphite", "Gold"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 14 Pro",
+    "image": "https://i.ibb.co/wJmHWg6/14-pro.jpg",
+    "price": 1599.99,
+    "details": {
+      "model": "14 Pro",
+      "display": "6.1 inches Super Retina XDR",
+      "processor": "A15 Bionic",
+      "camera": "12 MP triple",
+      "ram": "6 GB",
+      "storage": "512 GB"
+    },
+    "features": ["ProMotion technology", "LiDAR scanner", "Night mode"],
+    "colors": ["Silver", "Pacific Blue"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 13 Mini",
+    "image": "https://i.ibb.co/Mg5h9s5/13-mini.jpg",
+    "price": 1299.99,
+    "details": {
+      "model": "13 Mini",
+      "display": "5.4 inches Super Retina XDR",
+      "processor": "A15 Bionic",
+      "camera": "12 MP dual",
+      "ram": "6 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Compact design", "Cinematic mode"],
+    "colors": ["Pink", "Green"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 11 Pro",
+    "image": "https://i.ibb.co/NW2HzXc/11-pro.webp",
+    "price": 1199.99,
+    "details": {
+      "model": "11 Pro",
+      "display": "5.8 inches Super Retina XDR",
+      "processor": "A13 Bionic",
+      "camera": "12 MP triple",
+      "ram": "4 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Triple-camera system", "Night mode"],
+    "colors": ["Midnight Green", "Silver"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone XR2",
+    "image": "https://i.ibb.co/Pj7zncG/xr2.jpg",
+    "price": 899.99,
+    "details": {
+      "model": "XR2",
+      "display": "6.1 inches Liquid Retina",
+      "processor": "A14 Bionic",
+      "camera": "12 MP dual",
+      "ram": "4 GB",
+      "storage": "128 GB"
+    },
+    "features": ["Liquid Retina display", "Face ID"],
+    "colors": ["Blue", "Red"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 12 Pro Max",
+    "image": "https://i.ibb.co/TcmnQSC/12-pro-max.jpg",
+    "price": 1699.99,
+    "details": {
+      "model": "12 Pro Max",
+      "display": "6.7 inches Super Retina XDR",
+      "processor": "A14 Bionic",
+      "camera": "12 MP triple",
+      "ram": "6 GB",
+      "storage": "512 GB"
+    },
+    "features": ["LiDAR scanner", "Night mode"],
+    "colors": ["Gold", "Pacific Blue"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone SE 5G",
+    "image": "https://i.ibb.co/PrwCcKb/se.jpg",
+    "price": 699.99,
+    "details": {
+      "model": "SE 5G",
+      "display": "4.7 inches Retina HD",
+      "processor": "A15 Bionic",
+      "camera": "12 MP single",
+      "ram": "4 GB",
+      "storage": "128 GB"
+    },
+    "features": ["5G capable", "Touch ID"],
+    "colors": ["White", "Black"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 14",
+    "image": "https://i.ibb.co/XkMhPQD/14.jpg",
+    "price": 1499.99,
+    "details": {
+      "model": "14",
+      "display": "6.1 inches Super Retina XDR",
+      "processor": "A16 Bionic",
+      "camera": "12 MP dual",
+      "ram": "6 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Cinematic mode", "ProMotion technology"],
+    "colors": ["Blue", "Graphite"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone XS Max",
+    "image": "https://i.ibb.co/kq651ST/xs.jpg",
+    "price": 1299.99,
+    "details": {
+      "model": "XS Max",
+      "display": "6.5 inches Super Retina",
+      "processor": "A12 Bionic",
+      "camera": "12 MP dual",
+      "ram": "4 GB",
+      "storage": "256 GB"
+    },
+    "features": ["Face ID", "Dual SIM"],
+    "colors": ["Silver", "Space Gray"],
+    "category": "655e4dc344cff159da774119"
+  },
+  {
+    "title": "iPhone 9",
+    "image": "https://i.ibb.co/pJYKdBY/9.jpg",
+    "price": 799.99,
+    "details": {
+      "model": "9",
+      "display": "4.7 inches Retina HD",
+      "processor": "A12 Bionic",
+      "camera": "12 MP single",
+      "ram": "3 GB",
+      "storage": "64 GB"
+    },
+    "features": ["Touch ID", "Wireless charging"],
+    "colors": ["Black", "Red"],
+    "category": "655e4dc344cff159da774119"
+  }
+]
