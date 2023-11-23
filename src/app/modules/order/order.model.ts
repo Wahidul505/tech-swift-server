@@ -34,11 +34,22 @@ const OrderSchema = new Schema<IOrder, OrderModel>(
       type: String,
     },
     user: {
-      type: Schema.Types.ObjectId,
+      type: String,
+      required: true,
       ref: 'User',
     },
     products: {
-      type: [Schema.Types.ObjectId],
+      type: [
+        {
+          productId: {
+            type: String,
+            ref: 'Product',
+          },
+          quantity: {
+            type: Number,
+          },
+        },
+      ],
     },
   },
   {

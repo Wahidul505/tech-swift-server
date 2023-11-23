@@ -19,7 +19,7 @@ const register = async (payload: IUser): Promise<string> => {
 
   const userInfo = {
     role: result.role,
-    userId: result.id,
+    userId: result._id,
   };
 
   const token = jwtHelpers.createToken(
@@ -46,7 +46,7 @@ const login = async (payload: Partial<IUser>): Promise<string> => {
 
   const userInfo = {
     role: isUserExist.role,
-    userId: isUserExist.id,
+    userId: isUserExist._id,
   };
 
   const token = jwtHelpers.createToken(

@@ -16,6 +16,11 @@ const ProfileSchema = new Schema<IProfile, ProfileModel>(
     dp: {
       type: String,
     },
+    user: {
+      type: String,
+      required: true,
+      ref: 'User',
+    },
   },
   {
     timestamps: true,

@@ -44,6 +44,7 @@ const ProductSchema = new Schema<IProduct, ProductModel>(
     },
     category: {
       type: String,
+      required: true,
       ref: 'Category',
     },
   },
