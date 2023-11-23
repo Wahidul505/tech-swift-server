@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
 import { paginationFields } from '../../../constants/pagination';
+import { IFilters } from '../../../interfaces/common';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
@@ -21,7 +22,10 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, productFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
-  const result = await ProductService.getAllFromDB(filters, paginationOptions);
+  const result = await ProductService.getAllFromDB(
+    filters as IFilters,
+    paginationOptions
+  );
   sendResponse<IProduct[]>(res, {
     success: true,
     message: 'Products fetched',
