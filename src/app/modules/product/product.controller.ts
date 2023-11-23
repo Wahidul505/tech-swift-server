@@ -1,7 +1,10 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
+import { paginationFields } from '../../../constants/pagination';
 import catchAsync from '../../../shared/catchAsync';
+import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
+import { productFilterableFields } from './product.constants';
 import { IProduct } from './product.interface';
 import { ProductService } from './product.service';
 
@@ -16,12 +19,15 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = await ProductService.getAllFromDB();
+  const filters = pick(req.query, productFilterableFields);
+  const paginationOptions = pick(req.query, paginationFields);
+  const result = await ProductService.getAllFromDB(filters, paginationOptions);
   sendResponse<IProduct[]>(res, {
     success: true,
     message: 'Products fetched',
     statusCode: httpStatus.OK,
-    data: result,
+    meta: result.meta,
+    data: result.data,
   });
 });
 
