@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Apple TV HD 5th Gen",
+    "image": "https://i.ibb.co/PD7nQtx/4k-3rd.jpg",
+    "price": 149.99,
+    "details": {
+      "model": "A1842",
+      "display": "1080p"
+    },
+    "features": ["Siri Remote", "App Store", "Apple Music"],
+    "colors": ["Black"],
+    "category": "655e4e3844cff159da774123"
+  },
+  {
+    "title": "Apple TV 4K 4th Gen",
+    "image": "https://i.ibb.co/4SBxjsL/1st.jpg",
+    "price": 199.99,
+    "details": {
+      "model": "A2157",
+      "display": "4K HDR"
+    },
+    "features": ["Dolby Atmos", "Apple Arcade", "A12 Bionic chip"],
+    "colors": ["Silver", "Space Gray"],
+    "category": "655e4e3844cff159da774123"
+  },
+  {
+    "title": "Apple TV HD 6th Gen",
+    "image": "https://i.ibb.co/wSF3Bqs/4k-2nd.jpg",
+    "price": 169.99,
+    "details": {
+      "model": "A2033",
+      "display": "1080p"
+    },
+    "features": ["Siri", "Apple Fitness+", "Apple Originals"],
+    "colors": ["White"],
+    "category": "655e4e3844cff159da774123"
+  },
+  {
+    "title": "Apple TV 4K 5th Gen",
+    "image": "https://i.ibb.co/RyGcwC6/4k-4th.jpg",
+    "price": 229.99,
+    "details": {
+      "model": "A2383",
+      "display": "4K HDR"
+    },
+    "features": ["Spatial Audio", "Apple TV+", "A14 Bionic chip"],
+    "colors": ["Gold", "Midnight Green"],
+    "category": "655e4e3844cff159da774123"
+  }
+]

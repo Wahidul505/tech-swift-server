@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Apple Watch Series 7",
+    "image": "https://i.ibb.co/J2tm8kY/series-7.jpg",
+    "price": 399.99,
+    "details": {
+      "model": "Series 7",
+      "display": "Always-On Retina display",
+      "processor": "S7 chip"
+    },
+    "features": ["Blood Oxygen app", "ECG app", "Fitness tracking"],
+    "colors": ["Silver", "Midnight", "Starlight"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 8",
+    "image": "https://i.ibb.co/HTX9Mdk/sereis-8.jpg",
+    "price": 499.99,
+    "details": {
+      "model": "Series 8",
+      "display": "ProMotion Always-On Retina display",
+      "processor": "S8 chip"
+    },
+    "features": ["Blood Glucose monitoring", "ECG app", "Sleep analysis"],
+    "colors": ["Graphite", "Gold", "Blue"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 3",
+    "image": "https://i.ibb.co/tcLTXBL/series-3.jpg",
+    "price": 199.99,
+    "details": {
+      "model": "Series 3",
+      "display": "Retina display",
+      "processor": "S3 chip"
+    },
+    "features": ["Heart rate sensor", "Water-resistant", "GPS"],
+    "colors": ["Silver Aluminum", "Space Gray Aluminum", "Gold Aluminum"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 9 GPS",
+    "image": "https://i.ibb.co/qpqNP7s/9-gps.jpg",
+    "price": 599.99,
+    "details": {
+      "model": "Series 9",
+      "display": "ProMotion Always-On Retina display",
+      "processor": "S9 chip"
+    },
+    "features": ["Fall detection", "GPS", "Blood Pressure monitoring"],
+    "colors": ["Space Gray", "Silver", "Red"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch SE GPS",
+    "image": "https://i.ibb.co/T4MGCsj/se-gps.jpg",
+    "price": 329.99,
+    "details": {
+      "model": "SE",
+      "display": "Retina display",
+      "processor": "S5 chip"
+    },
+    "features": ["Fall detection", "Sleep tracking", "Built-in compass", "GPS"],
+    "colors": ["Space Gray", "Silver", "Gold"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 6",
+    "image": "https://i.ibb.co/4sKMz7F/5.jpg",
+    "price": 499.99,
+    "details": {
+      "model": "Series 6",
+      "display": "Always-On Retina display",
+      "processor": "S6 chip"
+    },
+    "features": ["Blood Oxygen app", "ECG app", "Ultraviolet light sensor"],
+    "colors": ["Product(RED)", "Blue Aluminum", "Graphite"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 9",
+    "image": "https://i.ibb.co/6m7SZsv/series-9.jpg",
+    "price": 699.99,
+    "details": {
+      "model": "Series 9",
+      "display": "ProMotion Always-On Retina display",
+      "processor": "S9 chip"
+    },
+    "features": ["Blood Pressure monitoring", "ECG app", "Fitness tracking"],
+    "colors": ["Space Gray", "Silver", "Blue"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch SE",
+    "image": "https://i.ibb.co/ftbP4Kj/se.jpg",
+    "price": 279.99,
+    "details": {
+      "model": "SE",
+      "display": "Retina display",
+      "processor": "S5 chip"
+    },
+    "features": ["Fall detection", "Sleep tracking", "Built-in compass"],
+    "colors": ["Space Gray", "Gold", "Silver"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 7 GPS",
+    "image": "https://i.ibb.co/0tS1V8k/7-gps.jpg",
+    "price": 449.99,
+    "details": {
+      "model": "Series 7",
+      "display": "Always-On Retina display",
+      "processor": "S7 chip"
+    },
+    "features": ["GPS", "Blood Oxygen app", "ECG app"],
+    "colors": ["Silver", "Midnight", "Starlight"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Series 8 GPS",
+    "image": "https://i.ibb.co/6ycrpCP/8-gps.jpg",
+    "price": 549.99,
+    "details": {
+      "model": "Series 8",
+      "display": "ProMotion Always-On Retina display",
+      "processor": "S8 chip"
+    },
+    "features": ["GPS", "Blood Glucose monitoring", "Sleep analysis"],
+    "colors": ["Graphite", "Gold", "Green"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Ultra",
+    "image": "https://i.ibb.co/pb1Dkt5/ultra.jpg",
+    "price": 799.99,
+    "details": {
+      "model": "Ultra",
+      "display": "ProMotion Always-On Retina display",
+      "processor": "S10 chip"
+    },
+    "features": [
+      "Ultra Health Monitoring",
+      "Advanced Fitness Metrics",
+      "Always-on Altimeter"
+    ],
+    "colors": ["Black Titanium", "Ceramic White", "Solar Gold"],
+    "category": "655e4de944cff159da77411d"
+  },
+  {
+    "title": "Apple Watch Ultra GPS",
+    "image": "https://i.ibb.co/wCh9CJw/ultra-gps.jpg",
+    "price": 649.99,
+    "details": {
+      "model": "Ultra",
+      "display": "ProMotion Always-On Retina display",
+      "processor": "S10 chip"
+    },
+    "features": ["GPS", "Ultra Health Monitoring", "Always-on Altimeter"],
+    "colors": ["Silver Aluminum", "Space Gray Aluminum", "Gold Aluminum"],
+    "category": "655e4de944cff159da77411d"
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "title": "iPad Pro 12.9-inch",
+    "image": "https://i.ibb.co/QQKRSSC/pro-4.jpg",
+    "price": 1099.99,
+    "details": {
+      "model": "2022",
+      "display": "Liquid Retina XDR",
+      "processor": "M1",
+      "camera": "12MP",
+      "ram": "8GB",
+      "storage": "256GB"
+    },
+    "features": ["Face ID", "4K video recording"],
+    "colors": ["Space Gray", "Silver"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad Air",
+    "image": "https://i.ibb.co/4gcGsn3/air-2.jpg",
+    "price": 699.99,
+    "details": {
+      "model": "2023",
+      "display": "Liquid Retina",
+      "processor": "A15 Bionic",
+      "camera": "12MP",
+      "ram": "6GB",
+      "storage": "128GB"
+    },
+    "features": ["Touch ID", "Apple Pencil support"],
+    "colors": ["Sky Blue", "Rose Gold"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad mini",
+    "image": "https://i.ibb.co/g9bZk0F/mini.jpg",
+    "price": 499.99,
+    "details": {
+      "model": "2023",
+      "display": "Liquid Retina",
+      "processor": "A15 Bionic",
+      "camera": "8MP",
+      "ram": "4GB",
+      "storage": "64GB"
+    },
+    "features": ["Compact size", "USB-C"],
+    "colors": ["Space Gray", "Starlight"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad 10.2-inch",
+    "image": "https://i.ibb.co/nPr5qw6/102.jpg",
+    "price": 329.99,
+    "details": {
+      "model": "2022",
+      "display": "Retina",
+      "processor": "A13 Bionic",
+      "camera": "8MP",
+      "ram": "3GB",
+      "storage": "32GB"
+    },
+    "features": ["Smart Connector", "Support for Apple Smart Keyboard"],
+    "colors": ["Gold", "Silver"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad Pro 11-inch",
+    "image": "https://i.ibb.co/V91GsZM/11-pro.jpg",
+    "price": 799.99,
+    "details": {
+      "model": "2022",
+      "display": "Liquid Retina XDR",
+      "processor": "M1",
+      "camera": "12MP",
+      "ram": "8GB",
+      "storage": "512GB"
+    },
+    "features": ["Face ID", "5G capable"],
+    "colors": ["Space Gray", "Green"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad 9.7-inch",
+    "image": "https://i.ibb.co/2KvVmLT/random.jpg",
+    "price": 249.99,
+    "details": {
+      "model": "2022",
+      "display": "Retina",
+      "processor": "A12 Bionic",
+      "camera": "8MP",
+      "ram": "3GB",
+      "storage": "128GB"
+    },
+    "features": ["Affordable", "Touch ID"],
+    "colors": ["Silver", "Space Gray"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad Pro 12.9-inch",
+    "image": "https://i.ibb.co/4F5bbrQ/pro.jpg",
+    "price": 1099.99,
+    "details": {
+      "model": "2023",
+      "display": "Liquid Retina XDR",
+      "processor": "M2",
+      "camera": "12MP",
+      "ram": "16GB",
+      "storage": "1TB"
+    },
+    "features": ["Face ID", "ProMotion technology"],
+    "colors": ["Silver", "Space Gray"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad Air",
+    "image": "https://i.ibb.co/fQfXZZR/air.jpg",
+    "price": 699.99,
+    "details": {
+      "model": "2022",
+      "display": "Liquid Retina",
+      "processor": "A14 Bionic",
+      "camera": "12MP",
+      "ram": "4GB",
+      "storage": "256GB"
+    },
+    "features": ["USB-C", "True Tone display"],
+    "colors": ["Sky Blue", "Gold"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad Pro 10.5-inch",
+    "image": "https://i.ibb.co/RpjCSBk/10.jpg",
+    "price": 749.99,
+    "details": {
+      "model": "2023",
+      "display": "Liquid Retina",
+      "processor": "A15 Bionic",
+      "camera": "12MP",
+      "ram": "6GB",
+      "storage": "256GB"
+    },
+    "features": ["Face ID", "4K video recording"],
+    "colors": ["Space Gray", "Silver"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad 11-inch",
+    "image": "https://i.ibb.co/bmCyrFY/pro-3.jpg",
+    "price": 549.99,
+    "details": {
+      "model": "2023",
+      "display": "Liquid Retina",
+      "processor": "A15 Bionic",
+      "camera": "10MP",
+      "ram": "6GB",
+      "storage": "128GB"
+    },
+    "features": ["Face ID", "ProMotion technology"],
+    "colors": ["Gold", "Midnight Green"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad Air 2",
+    "image": "https://i.ibb.co/DRbZmx6/2nd.jpg",
+    "price": 399.99,
+    "details": {
+      "model": "2014",
+      "display": "Retina",
+      "processor": "A8X",
+      "camera": "8MP",
+      "ram": "2GB",
+      "storage": "64GB"
+    },
+    "features": ["Touch ID", "Thin and light design"],
+    "colors": ["Gold", "Space Gray"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad mini 4",
+    "image": "https://i.ibb.co/t8fB90K/old.jpg",
+    "price": 299.99,
+    "details": {
+      "model": "2015",
+      "display": "Retina",
+      "processor": "A8",
+      "camera": "8MP",
+      "ram": "2GB",
+      "storage": "128GB"
+    },
+    "features": ["Compact size", "Fingerprint-resistant oleophobic coating"],
+    "colors": ["Silver", "Gold"],
+    "category": "655e4dd444cff159da77411b"
+  },
+  {
+    "title": "iPad 5th generation",
+    "image": "https://i.ibb.co/wzfCTjR/7.jpg",
+    "price": 329.99,
+    "details": {
+      "model": "2017",
+      "display": "Retina",
+      "processor": "A9",
+      "camera": "8MP",
+      "ram": "2GB",
+      "storage": "32GB"
+    },
+    "features": ["Touch ID", "Support for Apple Pencil"],
+    "colors": ["Silver", "Gold"],
+    "category": "655e4dd444cff159da77411b"
+  }
+]

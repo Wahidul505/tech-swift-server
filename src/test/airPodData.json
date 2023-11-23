@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Apple AirPods Pro",
+    "image": "https://i.ibb.co/yQHPPFp/pro-1.jpg",
+    "price": 249.99,
+    "details": {
+      "model": "A2084"
+    },
+    "features": ["Active Noise Cancellation", "Transparency mode"],
+    "colors": ["White"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods Max",
+    "image": "https://i.ibb.co/NrGv644/max.jpg",
+    "price": 549.99,
+    "details": {
+      "model": "A2096"
+    },
+    "features": ["High-fidelity audio", "Active Noise Cancellation"],
+    "colors": ["Space Gray"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods (3rd generation)",
+    "image": "https://i.ibb.co/pv0Q5yH/3rd.jpg",
+    "price": 179.99,
+    "details": {
+      "model": "A2168"
+    },
+    "features": ["Spatial audio", "MagSafe charging"],
+    "colors": ["Midnight", "Starlight"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods (2nd generation)",
+    "image": "https://i.ibb.co/pwJMdSt/2nd.jpg",
+    "price": 159.99,
+    "details": {
+      "model": "A2032"
+    },
+    "features": ["Hands-free Siri", "Wireless charging case"],
+    "colors": ["White"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods",
+    "image": "https://i.ibb.co/pv0Q5yH/3rd.jpg",
+    "price": 129.99,
+    "details": {
+      "model": "A1523"
+    },
+    "features": ["Automatic ear detection", "Quick access to Siri"],
+    "colors": ["White"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods with Charging Case",
+    "image": "https://i.ibb.co/CzrFs9d/pro.jpg",
+    "price": 159.99,
+    "details": {
+      "model": "A1602"
+    },
+    "features": ["Rich, high-quality audio and voice"],
+    "colors": ["White"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods with Wireless Charging Case",
+    "image": "https://i.ibb.co/802cQm4/pro-2nd.jpg",
+    "price": 199.99,
+    "details": {
+      "model": "A1938"
+    },
+    "features": ["Effortless setup", "Seamless switching between devices"],
+    "colors": ["White"],
+    "category": "655e4e1044cff159da77411f"
+  },
+  {
+    "title": "Apple AirPods Pro (Limited Edition)",
+    "image": "https://i.ibb.co/CzrFs9d/pro.jpg",
+    "price": 299.99,
+    "details": {
+      "model": "A2154"
+    },
+    "features": ["Customizable fit", "Adaptive EQ"],
+    "colors": ["Gold"],
+    "category": "655e4e1044cff159da77411f"
+  }
+]

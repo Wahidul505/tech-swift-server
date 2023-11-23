@@ -1,0 +1,222 @@
+[
+  {
+    "title": "Apple Adapter 1",
+    "image": "https://i.ibb.co/ynGFJ9m/usb-adopter.jpg",
+    "price": 29.99,
+    "details": {
+      "model": "Adapter Model A"
+    },
+    "features": ["Compact Design", "High-Speed Connection"],
+    "colors": ["White", "Black"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "MacBook Adapter 1",
+    "image": "https://i.ibb.co/2YMFhBy/45-magsafe-adopter.jpg",
+    "price": 49.99,
+    "details": {
+      "model": "MacBook Adapter Pro"
+    },
+    "features": ["Multiple Ports", "Sleek Aluminum Design"],
+    "colors": ["Silver"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "Apple Cable 1",
+    "image": "https://i.ibb.co/pLPM21R/usb-cable.jpg",
+    "price": 19.99,
+    "details": {
+      "model": "Lightning Cable X"
+    },
+    "features": ["Fast Charging", "Durable Material"],
+    "colors": ["White"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "Apple Magic Mouse 1",
+    "image": "https://i.ibb.co/9HbzyVB/mouse-3.jpg",
+    "price": 79.99,
+    "details": {
+      "model": "Magic Mouse 2"
+    },
+    "features": ["Multi-Touch Surface", "Wireless"],
+    "colors": ["Silver", "Space Gray"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "Apple Magic Keyboard 1",
+    "image": "https://i.ibb.co/5YsK1zV/keyboard.jpg",
+    "price": 99.99,
+    "details": {
+      "model": "Magic Keyboard Pro"
+    },
+    "features": ["Backlit Keys", "Bluetooth Connectivity"],
+    "colors": ["White"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "Apple Adapter 2",
+    "image": "https://i.ibb.co/ynGFJ9m/usb-adopter.jpg",
+    "price": 34.99,
+    "details": {
+      "model": "Adapter Model B"
+    },
+    "features": ["Compact Design", "High-Speed Connection"],
+    "colors": ["White", "Black"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "MacBook Adapter 2",
+    "image": "https://i.ibb.co/2YMFhBy/45-magsafe-adopter.jpg",
+    "price": 54.99,
+    "details": {
+      "model": "MacBook Adapter Air"
+    },
+    "features": ["Multiple Ports", "Sleek Aluminum Design"],
+    "colors": ["Silver"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "Apple Cable 2",
+    "image": "https://i.ibb.co/pLPM21R/usb-cable.jpg",
+    "price": 24.99,
+    "details": {
+      "model": "Lightning Cable Y"
+    },
+    "features": ["Fast Charging", "Durable Material"],
+    "colors": ["White"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 12 Case",
+    "image": "https://i.ibb.co/ccr431y/silicon-case.jpg",
+    "price": 19.99,
+    "details": {
+      "model": "iPhone 12"
+    },
+    "features": ["Slim design", "Shockproof"],
+    "colors": ["Black", "Clear"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 12 Pro Case",
+    "image": "https://i.ibb.co/vqB6c2J/case-2.jpg",
+    "price": 24.99,
+    "details": {
+      "model": "iPhone 12 Pro"
+    },
+    "features": ["Durable material", "Wireless charging compatible"],
+    "colors": ["Blue", "Transparent"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 12 Pro Max Case",
+    "image": "https://i.ibb.co/vqB6c2J/case-2.jpg",
+    "price": 29.99,
+    "details": {
+      "model": "iPhone 12 Pro Max"
+    },
+    "features": ["Heavy-duty protection", "Scratch-resistant"],
+    "colors": ["Red", "Frosted"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 13 Case",
+    "image": "https://i.ibb.co/6b0nRGS/case-3.jpg",
+    "price": 22.99,
+    "details": {
+      "model": "iPhone 13"
+    },
+    "features": ["Slim profile", "Easy access to ports"],
+    "colors": ["Green", "Smoke"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 13 Pro Case",
+    "image": "https://i.ibb.co/6b0nRGS/case-3.jpg",
+    "price": 27.99,
+    "details": {
+      "model": "iPhone 13 Pro"
+    },
+    "features": ["360-degree protection", "Camera lens protection"],
+    "colors": ["Purple", "Matte Black"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 13 Pro Max Case",
+    "image": "https://i.ibb.co/6b0nRGS/case-3.jpg",
+    "price": 32.99,
+    "details": {
+      "model": "iPhone 13 Pro Max"
+    },
+    "features": ["Slim fit", "Precise cutouts"],
+    "colors": ["Yellow", "Rose Gold"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 14 Case",
+    "image": "https://i.ibb.co/mGhN4j5/case.jpg",
+    "price": 24.99,
+    "details": {
+      "model": "iPhone 14"
+    },
+    "features": ["Dual-layer protection", "Anti-fingerprint"],
+    "colors": ["Silver", "Gold"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 14 Pro Case",
+    "image": "https://i.ibb.co/mGhN4j5/case.jpg",
+    "price": 29.99,
+    "details": {
+      "model": "iPhone 14 Pro"
+    },
+    "features": ["Slim and lightweight", "Shock-absorbent"],
+    "colors": ["Cyan", "Bronze"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 14 Pro Max Case",
+    "image": "https://i.ibb.co/mGhN4j5/case.jpg",
+    "price": 34.99,
+    "details": {
+      "model": "iPhone 14 Pro Max"
+    },
+    "features": ["Full-body protection", "Responsive buttons"],
+    "colors": ["Orange", "Carbon Fiber"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 15 Case",
+    "image": "https://i.ibb.co/72zHyZM/leather-case.jpg",
+    "price": 26.99,
+    "details": {
+      "model": "iPhone 15"
+    },
+    "features": ["Raised edges", "Wireless charging support"],
+    "colors": ["Pink", "Leather Brown"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 15 Pro Case",
+    "image": "https://i.ibb.co/72zHyZM/leather-case.jpg",
+    "price": 31.99,
+    "details": {
+      "model": "iPhone 15 Pro"
+    },
+    "features": ["Sleek design", "Easy grip"],
+    "colors": ["Turquoise", "Marble"],
+    "category": "655e4f788af12af38f96b071"
+  },
+  {
+    "title": "iPhone 15 Pro Max Case",
+    "image": "https://i.ibb.co/72zHyZM/leather-case.jpg",
+    "price": 36.99,
+    "details": {
+      "model": "iPhone 15 Pro Max"
+    },
+    "features": ["Military-grade protection", "Slim form factor"],
+    "colors": ["Indigo", "Wood Grain"],
+    "category": "655e4f788af12af38f96b071"
+  }
+]

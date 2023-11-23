@@ -1,0 +1,183 @@
+[
+  {
+    "title": "MacBook Air",
+    "image": "https://i.ibb.co/cJ64c3P/air-2020.jpg",
+    "price": 1299.99,
+    "details": {
+      "model": "2023",
+      "display": "Retina",
+      "processor": "Apple M2",
+      "camera": "720p FaceTime",
+      "ram": "8GB",
+      "storage": "256GB SSD"
+    },
+    "features": ["Lightweight", "Touch ID"],
+    "colors": ["Gold", "Silver"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "Mac Mini (M1 Chip)",
+    "image": "https://i.ibb.co/KmkWmnp/mini-m1.jpg",
+    "price": 799.99,
+    "details": {
+      "model": "2023",
+      "processor": "Apple M1",
+      "ram": "16GB",
+      "storage": "512GB SSD"
+    },
+    "features": ["Compact Size", "Silent Operation"],
+    "colors": ["Space Gray"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "MacBook",
+    "image": "https://i.ibb.co/RgqMSD2/macbook-air-m2.jpg",
+    "price": 1599.99,
+    "details": {
+      "model": "2023",
+      "display": "Retina",
+      "processor": "Intel Core i5",
+      "camera": "720p FaceTime",
+      "ram": "16GB",
+      "storage": "1TB SSD"
+    },
+    "features": ["Classic Design", "USB-C"],
+    "colors": ["Rose Gold", "Space Gray"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "Mac Pro",
+    "image": "https://i.ibb.co/0MhrDvH/mac-pro.jpg",
+    "price": 5999.99,
+    "details": {
+      "model": "2023",
+      "processor": "Intel Xeon",
+      "ram": "64GB",
+      "storage": "2TB SSD"
+    },
+    "features": ["High-Performance", "Expandable"],
+    "colors": ["Silver", "Black"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "iMac 2023",
+    "image": "https://i.ibb.co/f9hBRS2/studio-2.jpg",
+    "price": 2499.99,
+    "details": {
+      "model": "2023",
+      "display": "5K Retina",
+      "processor": "Apple M2 Pro",
+      "camera": "1080p FaceTime",
+      "ram": "32GB",
+      "storage": "1TB SSD"
+    },
+    "features": ["All-in-One Design", "Magic Mouse"],
+    "colors": ["Blue", "Green"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "MacBook Pro",
+    "image": "https://i.ibb.co/GHNP6qC/macbook-pro.jpg",
+    "price": 1999.99,
+    "details": {
+      "model": "2023 Pro",
+      "display": "Retina",
+      "processor": "Intel Core i7",
+      "camera": "HD FaceTime",
+      "ram": "16GB",
+      "storage": "512GB SSD"
+    },
+    "features": ["Touch Bar", "Thunderbolt 4"],
+    "colors": ["Space Gray", "Silver"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "Mac Studio",
+    "image": "https://i.ibb.co/BV6TxWV/studio.jpg",
+    "price": 4499.99,
+    "details": {
+      "model": "2023",
+      "display": "Pro XDR",
+      "processor": "Apple M2 Ultra",
+      "ram": "128GB",
+      "storage": "4TB SSD"
+    },
+    "features": ["Powerful Workstation", "Multiple Ports"],
+    "colors": ["Space Gray"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "MacBook Air",
+    "image": "https://i.ibb.co/RSLPSRb/macbook-pro-m2-chip.jpg",
+    "price": 1399.99,
+    "details": {
+      "model": "2023",
+      "display": "Retina",
+      "processor": "Apple M2",
+      "camera": "720p FaceTime",
+      "ram": "8GB",
+      "storage": "512GB SSD"
+    },
+    "features": ["Lightweight", "Touch ID"],
+    "colors": ["Gold", "Silver"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "Mac Mini",
+    "image": "https://i.ibb.co/RzfjxX1/mini-m2.jpg",
+    "price": 899.99,
+    "details": {
+      "model": "2023",
+      "processor": "Apple M1",
+      "ram": "16GB",
+      "storage": "1TB SSD"
+    },
+    "features": ["Compact Size", "Silent Operation"],
+    "colors": ["Space Gray"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "Mac Studio Display",
+    "image": "https://i.ibb.co/zXstFLC/display-3.jpg",
+    "price": 1499.99,
+    "details": {
+      "model": "Studio Pro",
+      "display": "6K Retina"
+    },
+    "features": ["True Tone", "ProMotion"],
+    "colors": ["Black", "White"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "MacBook Pro 14-inch 2022",
+    "image": "https://i.ibb.co/7km9gnn/pro-16-inch.jpg",
+    "price": 2199.99,
+    "details": {
+      "model": "2022",
+      "display": "Liquid Retina XDR",
+      "processor": "Apple M2 Pro",
+      "camera": "1080p FaceTime",
+      "ram": "32GB",
+      "storage": "1TB SSD"
+    },
+    "features": ["Mini-LED Display", "MagSafe 3"],
+    "colors": ["Space Gray", "Silver"],
+    "category": "655e4da944cff159da774117"
+  },
+  {
+    "title": "MacBook Pro 16-inch 2021",
+    "image": "https://i.ibb.co/FnRGFmj/pro-2021.jpg",
+    "price": 2799.99,
+    "details": {
+      "model": "2021",
+      "display": "ProMotion XDR",
+      "processor": "Intel Core i9",
+      "camera": "1080p FaceTime",
+      "ram": "64GB",
+      "storage": "2TB SSD"
+    },
+    "features": ["Large Retina Display", "Four Thunderbolt 4 ports"],
+    "colors": ["Space Gray"],
+    "category": "655e4da944cff159da774117"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Apple HomePod",
+    "image": "https://i.ibb.co/QPkzChJ/homepod-2nd.jpg",
+    "price": 299.99,
+    "details": {
+      "model": "HomePod 2nd Gen"
+    },
+    "features": [
+      "High-fidelity audio",
+      "Smart home integration",
+      "Spatial awareness"
+    ],
+    "colors": ["Space Gray", "White"],
+    "category": "655e4e5044cff159da774125"
+  },
+  {
+    "title": "Apple HomePod Mini",
+    "image": "https://i.ibb.co/nCtrvpk/mini.jpg",
+    "price": 99.99,
+    "details": {
+      "model": "HomePod Mini"
+    },
+    "features": ["Compact design", "Smart assistant", "Intercom functionality"],
+    "colors": ["Space Gray", "White"],
+    "category": "655e4e5044cff159da774125"
+  }
+]
