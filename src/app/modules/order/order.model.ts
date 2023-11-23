@@ -18,7 +18,6 @@ const OrderSchema = new Schema<IOrder, OrderModel>(
     },
     totalPrice: {
       type: Number,
-      required: true,
     },
     payment: {
       type: String,
@@ -27,8 +26,7 @@ const OrderSchema = new Schema<IOrder, OrderModel>(
     },
     status: {
       type: String,
-      required: true,
-      enum: ['pending', 'confirmed', 'shipped', 'delivered'],
+      enum: ['confirmed', 'shipped', 'delivered'],
     },
     transactionId: {
       type: String,

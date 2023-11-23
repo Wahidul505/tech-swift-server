@@ -20,7 +20,7 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = await ProfileService.getSingleFromDB(req.params.id);
+  const result = await ProfileService.getSingleFromDB(req?.user as JwtPayload);
   sendResponse<IProfile>(res, {
     success: true,
     message: 'Profile fetched',

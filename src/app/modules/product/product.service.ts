@@ -35,7 +35,6 @@ const getAllFromDB = async (
   }
 
   // Filters needs $and to fullfill all the conditions
-  console.log(filtersData);
   if (Object.keys(filtersData).length) {
     andConditions.push({
       $and: Object.entries(filtersData).map(([field, value]) => ({
@@ -53,7 +52,6 @@ const getAllFromDB = async (
   // If there is no condition , put {} to give all data
   const whereConditions =
     andConditions.length > 0 ? { $and: andConditions } : {};
-  console.log(andConditions);
 
   const result = await Product.find(whereConditions)
     .populate('category')
