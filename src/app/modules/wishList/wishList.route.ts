@@ -12,15 +12,9 @@ router.post(
 );
 
 router.get(
-  '/',
+  '/:userId',
   auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.CUSTOMER),
   WishListController.getSingleFromDB
-);
-
-router.patch(
-  '/:id',
-  auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.CUSTOMER),
-  WishListController.updateFromDB
 );
 
 export const WishListRoutes = router;

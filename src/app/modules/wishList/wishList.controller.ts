@@ -12,7 +12,7 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
   const result = await WishListService.insertIntoDB(user, payload);
   sendResponse<IWishList>(res, {
     success: true,
-    message: 'Wish list created',
+    message: 'Wish list updated',
     statusCode: httpStatus.OK,
     data: result,
   });
@@ -20,7 +20,8 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 
 const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
   const user = req?.user as JwtPayload;
-  const result = await WishListService.getSingleFromDB(user);
+  const userId = req?.params?.userId;
+  const result = await WishListService.getSingleFromDB(userId, user);
   sendResponse<IWishList>(res, {
     success: true,
     message: 'Wish list fetched',
@@ -29,21 +30,7 @@ const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-const updateFromDB = catchAsync(async (req: Request, res: Response) => {
-  const id = req?.params?.id;
-  const user = req?.user as JwtPayload;
-  const payload = req?.body;
-  const result = await WishListService.updateFromDB(id, user, payload);
-  sendResponse<IWishList>(res, {
-    success: true,
-    message: 'Wish list updated',
-    statusCode: httpStatus.OK,
-    data: result,
-  });
-});
-
 export const WishListController = {
   insertIntoDB,
   getSingleFromDB,
-  updateFromDB,
 };
