@@ -12,7 +12,7 @@ const WishListSchema = new mongoose_1.Schema({
     products: {
         type: [
             {
-                productId: {
+                product: {
                     type: String,
                     ref: 'Product',
                 },

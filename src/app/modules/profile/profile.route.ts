@@ -11,17 +11,17 @@ router.post(
   ProfileController.insertIntoDB
 );
 router.get(
-  '/:id',
+  '/:userId',
   auth(ENUM_USER_ROLE.CUSTOMER, ENUM_USER_ROLE.ADMIN),
   ProfileController.getSingleFromDB
 );
 router.patch(
-  '/:id',
+  '/:userId',
   auth(ENUM_USER_ROLE.CUSTOMER, ENUM_USER_ROLE.ADMIN),
   ProfileController.updateFromDB
 );
 router.delete(
-  '/:id',
+  '/:userId',
   auth(ENUM_USER_ROLE.CUSTOMER, ENUM_USER_ROLE.ADMIN),
   ProfileController.deleteFromDB
 );

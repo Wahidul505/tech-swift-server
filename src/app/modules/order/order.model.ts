@@ -39,7 +39,7 @@ const OrderSchema = new Schema<IOrder, OrderModel>(
     products: {
       type: [
         {
-          productId: {
+          product: {
             type: String,
             ref: 'Product',
           },

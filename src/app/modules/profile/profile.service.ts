@@ -23,28 +23,42 @@ const insertIntoDB = async (
   return result;
 };
 
-const getSingleFromDB = async (user: JwtPayload): Promise<IProfile | null> => {
-  const result = await Profile.findOne({ user: user?.userId });
+const getSingleFromDB = async (
+  userId: string,
+  user: JwtPayload
+): Promise<IProfile | null> => {
+  checkUserMatch(userId, user?.userId);
+  const result = await Profile.findOne({ user: userId });
   return result;
 };
 
 const updateFromDB = async (
-  id: string,
+  userId: string,
   user: JwtPayload,
   payload: Partial<IProfile>
 ): Promise<IProfile | null> => {
-  const isProfileExist = await Profile.findById(id);
+  const isProfileExist = await Profile.findOne({ user: userId });
+  console.log(isProfileExist);
+  if (!isProfileExist) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Profile does not exist');
+  }
   checkUserMatch(user?.userId, isProfileExist?.user);
-  const result = await Profile.findByIdAndUpdate(id, payload, {
+  const result = await Profile.findOneAndUpdate({ user: userId }, payload, {
     new: true,
   });
   return result;
 };
 
-const deleteFromDB = async (id: string, user: JwtPayload): Promise<void> => {
-  const isProfileExist = await Profile.findById(id);
+const deleteFromDB = async (
+  userId: string,
+  user: JwtPayload
+): Promise<void> => {
+  const isProfileExist = await Profile.findOne({ user: userId });
+  if (!isProfileExist) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Profile does not exist');
+  }
   checkUserMatch(user?.userId, isProfileExist?.user);
-  await Profile.findByIdAndDelete(id);
+  await Profile.findOneAndDelete({ user: userId });
 };
 
 export const ProfileService = {

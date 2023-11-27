@@ -1,4 +1,5 @@
 import { JwtPayload } from 'jsonwebtoken';
+import { checkUserMatch } from '../../../utils/checkUserMatched';
 import { IWishList } from './wishList.interface';
 import { WishList } from './wishList.model';
 
@@ -11,7 +12,7 @@ const insertIntoDB = async (
   if (isWishListExist) {
     result = await WishList.findOneAndUpdate({ user: user?.userId }, payload, {
       new: true,
-    }).populate('products.productId');
+    }).populate('products.product');
   }
   payload.user = user?.userId;
   result = await WishList.create(payload);
@@ -22,9 +23,9 @@ const getSingleFromDB = async (
   userId: string,
   user: JwtPayload
 ): Promise<IWishList | null> => {
-  console.log(user?.userId);
+  checkUserMatch(userId, user?.userId);
   const result = await WishList.findOne({ user: userId }).populate(
-    'products.productId'
+    'products.product'
   );
   return result;
 };

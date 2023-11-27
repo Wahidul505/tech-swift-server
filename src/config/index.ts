@@ -14,6 +14,5 @@ export default {
     expires_in: process.env.JWT_EXPIRES_IN,
     refresh_expires_in: process.env.JWT_REFRESH_EXPIRES_IN,
   },
-  stripe_pk: process.env.STRIPE_PK,
   stripe_sk: process.env.STRIPE_SK,
 };

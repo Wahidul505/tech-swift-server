@@ -27,7 +27,9 @@ const insertIntoDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, v
     });
 }));
 const getSingleFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield profile_service_1.ProfileService.getSingleFromDB(req === null || req === void 0 ? void 0 : req.user);
+    var _a;
+    const userId = (_a = req === null || req === void 0 ? void 0 : req.params) === null || _a === void 0 ? void 0 : _a.userId;
+    const result = yield profile_service_1.ProfileService.getSingleFromDB(userId, req === null || req === void 0 ? void 0 : req.user);
     (0, sendResponse_1.default)(res, {
         success: true,
         message: 'Profile fetched',
@@ -36,10 +38,10 @@ const getSingleFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0
     });
 }));
 const updateFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const id = req.params.id;
+    const userId = req.params.userId;
     const payload = req.body;
     const user = req.user;
-    const result = yield profile_service_1.ProfileService.updateFromDB(id, user, payload);
+    const result = yield profile_service_1.ProfileService.updateFromDB(userId, user, payload);
     (0, sendResponse_1.default)(res, {
         success: true,
         message: 'Profile updated',
@@ -48,9 +50,9 @@ const updateFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, v
     });
 }));
 const deleteFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const id = req.params.id;
+    const userId = req.params.userId;
     const user = req.user;
-    yield profile_service_1.ProfileService.deleteFromDB(id, user);
+    yield profile_service_1.ProfileService.deleteFromDB(userId, user);
     (0, sendResponse_1.default)(res, {
         success: true,
         message: 'Profile deleted',

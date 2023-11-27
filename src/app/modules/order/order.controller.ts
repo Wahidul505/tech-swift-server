@@ -50,7 +50,8 @@ const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getMyOrders = catchAsync(async (req: Request, res: Response) => {
-  const result = await OrderService.getMyOrders(req.user as JwtPayload);
+  const userId = req?.params?.userId;
+  const result = await OrderService.getMyOrders(userId, req.user as JwtPayload);
   sendResponse<IOrder[]>(res, {
     statusCode: httpStatus.OK,
     success: true,

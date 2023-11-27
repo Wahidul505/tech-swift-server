@@ -29,6 +29,7 @@ const stripe_1 = __importDefault(require("stripe"));
 const config_1 = __importDefault(require("../../../config"));
 const ApiError_1 = __importDefault(require("../../../errors/ApiError"));
 const paginationHelper_1 = require("../../../helpers/paginationHelper");
+const checkUserMatched_1 = require("../../../utils/checkUserMatched");
 const product_model_1 = require("../product/product.model");
 const order_constants_1 = require("./order.constants");
 const order_model_1 = require("./order.model");
@@ -42,7 +43,7 @@ const insertIntoDB = (payload, user) => __awaiter(void 0, void 0, void 0, functi
     }
     else {
         const orderedProducts = yield Promise.all(payload.products.map((product) => __awaiter(void 0, void 0, void 0, function* () {
-            const productData = yield product_model_1.Product.findById(product === null || product === void 0 ? void 0 : product.productId).lean();
+            const productData = yield product_model_1.Product.findById(product === null || product === void 0 ? void 0 : product.product).lean();
             const price = productData === null || productData === void 0 ? void 0 : productData.price;
             return {
                 price: price,
@@ -103,7 +104,7 @@ const getAllFromDB = (filters, paginationOptions) => __awaiter(void 0, void 0, v
     // If there is no condition , put {} to give all data
     const whereConditions = andConditions.length > 0 ? { $and: andConditions } : {};
     const result = yield order_model_1.Order.find(whereConditions)
-        .populate('products.productId')
+        .populate('products.product')
         .sort(sortConditions)
         .skip(skip)
         .limit(limit);
@@ -120,15 +121,16 @@ const getAllFromDB = (filters, paginationOptions) => __awaiter(void 0, void 0, v
 const getSingleFromDB = (id) => __awaiter(void 0, void 0, void 0, function* () {
     const result = yield order_model_1.Order.findById(id)
         .populate('user')
-        .populate('products.productId');
+        .populate('products.product');
     return result;
 });
-const getMyOrders = (user) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield order_model_1.Order.find({ user: user === null || user === void 0 ? void 0 : user.userId }).populate('products.productId');
+const getMyOrders = (userId, user) => __awaiter(void 0, void 0, void 0, function* () {
+    (0, checkUserMatched_1.checkUserMatch)(userId, user === null || user === void 0 ? void 0 : user.userId);
+    const result = yield order_model_1.Order.find({ user: userId }).populate('products.product');
     return result;
 });
 const getMySingleOrder = (id, user) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield order_model_1.Order.findOne({ _id: id, user: user === null || user === void 0 ? void 0 : user.userId }).populate('products.productId');
+    const result = yield order_model_1.Order.findOne({ _id: id, user: user === null || user === void 0 ? void 0 : user.userId }).populate('products.product');
     return result;
 });
 exports.OrderService = {

@@ -20,7 +20,11 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
-  const result = await ProfileService.getSingleFromDB(req?.user as JwtPayload);
+  const userId = req?.params?.userId;
+  const result = await ProfileService.getSingleFromDB(
+    userId,
+    req?.user as JwtPayload
+  );
   sendResponse<IProfile>(res, {
     success: true,
     message: 'Profile fetched',
@@ -30,10 +34,10 @@ const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const updateFromDB = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params.id;
+  const userId = req.params.userId;
   const payload = req.body;
   const user = req.user as JwtPayload;
-  const result = await ProfileService.updateFromDB(id, user, payload);
+  const result = await ProfileService.updateFromDB(userId, user, payload);
   sendResponse<IProfile>(res, {
     success: true,
     message: 'Profile updated',
@@ -43,9 +47,9 @@ const updateFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params.id;
+  const userId = req.params.userId;
   const user = req.user as JwtPayload;
-  await ProfileService.deleteFromDB(id, user);
+  await ProfileService.deleteFromDB(userId, user);
   sendResponse<IProfile>(res, {
     success: true,
     message: 'Profile deleted',

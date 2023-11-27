@@ -6,13 +6,13 @@ import { OrderController } from './order.controller';
 const router = express.Router();
 
 router.get(
-  '/my-order',
+  '/my-order/:userId',
   auth(ENUM_USER_ROLE.CUSTOMER),
   OrderController.getMyOrders
 );
 
 router.get(
-  '/my-order/:id',
+  '/my-order-single/:id',
   auth(ENUM_USER_ROLE.CUSTOMER),
   OrderController.getMySingleOrder
 );

@@ -7,6 +7,7 @@ import ApiError from '../../../errors/ApiError';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IFilters, IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
+import { checkUserMatch } from '../../../utils/checkUserMatched';
 import { Product } from '../product/product.model';
 import { orderSearchableFields } from './order.constants';
 import { IOrder } from './order.interface';
@@ -27,7 +28,7 @@ const insertIntoDB = async (
   } else {
     const orderedProducts = await Promise.all(
       payload.products.map(async product => {
-        const productData = await Product.findById(product?.productId).lean();
+        const productData = await Product.findById(product?.product).lean();
         const price = productData?.price;
         return {
           price: price as number,
@@ -109,7 +110,7 @@ const getAllFromDB = async (
     andConditions.length > 0 ? { $and: andConditions } : {};
 
   const result = await Order.find(whereConditions)
-    .populate('products.productId')
+    .populate('products.product')
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
@@ -129,13 +130,17 @@ const getAllFromDB = async (
 const getSingleFromDB = async (id: string): Promise<IOrder | null> => {
   const result = await Order.findById(id)
     .populate('user')
-    .populate('products.productId');
+    .populate('products.product');
   return result;
 };
 
-const getMyOrders = async (user: JwtPayload): Promise<IOrder[] | null> => {
-  const result = await Order.find({ user: user?.userId }).populate(
-    'products.productId'
+const getMyOrders = async (
+  userId: string,
+  user: JwtPayload
+): Promise<IOrder[] | null> => {
+  checkUserMatch(userId, user?.userId);
+  const result = await Order.find({ user: userId }).populate(
+    'products.product'
   );
   return result;
 };
@@ -145,7 +150,7 @@ const getMySingleOrder = async (
   user: JwtPayload
 ): Promise<IOrder | null> => {
   const result = await Order.findOne({ _id: id, user: user?.userId }).populate(
-    'products.productId'
+    'products.product'
   );
   return result;
 };

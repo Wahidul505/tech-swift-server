@@ -3,7 +3,7 @@ import { Model, Types } from 'mongoose';
 import { IUser } from '../user/user.interface';
 
 export type IWishListProduct = {
-  productId: Types.ObjectId | string;
+  product: Types.ObjectId | string;
 };
 
 export type IWishList = {

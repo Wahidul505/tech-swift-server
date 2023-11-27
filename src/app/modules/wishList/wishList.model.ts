@@ -12,7 +12,7 @@ const WishListSchema = new Schema<IWishList, WishListModel>(
     products: {
       type: [
         {
-          productId: {
+          product: {
             type: String,
             ref: 'Product',
           },

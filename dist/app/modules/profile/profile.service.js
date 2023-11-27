@@ -26,22 +26,30 @@ const insertIntoDB = (payload, user) => __awaiter(void 0, void 0, void 0, functi
     const result = yield profile_model_1.Profile.create(payload);
     return result;
 });
-const getSingleFromDB = (user) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield profile_model_1.Profile.findOne({ user: user === null || user === void 0 ? void 0 : user.userId });
+const getSingleFromDB = (userId, user) => __awaiter(void 0, void 0, void 0, function* () {
+    (0, checkUserMatched_1.checkUserMatch)(userId, user === null || user === void 0 ? void 0 : user.userId);
+    const result = yield profile_model_1.Profile.findOne({ user: userId });
     return result;
 });
-const updateFromDB = (id, user, payload) => __awaiter(void 0, void 0, void 0, function* () {
-    const isProfileExist = yield profile_model_1.Profile.findById(id);
+const updateFromDB = (userId, user, payload) => __awaiter(void 0, void 0, void 0, function* () {
+    const isProfileExist = yield profile_model_1.Profile.findOne({ user: userId });
+    console.log(isProfileExist);
+    if (!isProfileExist) {
+        throw new ApiError_1.default(http_status_1.default.BAD_REQUEST, 'Profile does not exist');
+    }
     (0, checkUserMatched_1.checkUserMatch)(user === null || user === void 0 ? void 0 : user.userId, isProfileExist === null || isProfileExist === void 0 ? void 0 : isProfileExist.user);
-    const result = yield profile_model_1.Profile.findByIdAndUpdate(id, payload, {
+    const result = yield profile_model_1.Profile.findOneAndUpdate({ user: userId }, payload, {
         new: true,
     });
     return result;
 });
-const deleteFromDB = (id, user) => __awaiter(void 0, void 0, void 0, function* () {
-    const isProfileExist = yield profile_model_1.Profile.findById(id);
+const deleteFromDB = (userId, user) => __awaiter(void 0, void 0, void 0, function* () {
+    const isProfileExist = yield profile_model_1.Profile.findOne({ user: userId });
+    if (!isProfileExist) {
+        throw new ApiError_1.default(http_status_1.default.BAD_REQUEST, 'Profile does not exist');
+    }
     (0, checkUserMatched_1.checkUserMatch)(user === null || user === void 0 ? void 0 : user.userId, isProfileExist === null || isProfileExist === void 0 ? void 0 : isProfileExist.user);
-    yield profile_model_1.Profile.findByIdAndDelete(id);
+    yield profile_model_1.Profile.findOneAndDelete({ user: userId });
 });
 exports.ProfileService = {
     insertIntoDB,

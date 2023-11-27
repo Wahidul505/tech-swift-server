@@ -5,7 +5,7 @@ import { IUser } from '../user/user.interface';
 export type IPayment = 'cod' | 'gateway';
 export type IStatus = 'confirmed' | 'shipped' | 'delivered';
 export type IOrderedProduct = {
-  productId: Types.ObjectId | string;
+  product: Types.ObjectId | string;
   quantity: number;
 };
 
