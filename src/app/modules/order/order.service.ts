@@ -111,7 +111,7 @@ const getAllFromDB = async (
 
   const result = await Order.find(whereConditions)
     .populate('products.product')
-    .sort(sortConditions)
+    .sort(sortConditions || { createdAt: 'desc' })
     .skip(skip)
     .limit(limit);
 
@@ -139,9 +139,9 @@ const getMyOrders = async (
   user: JwtPayload
 ): Promise<IOrder[] | null> => {
   checkUserMatch(userId, user?.userId);
-  const result = await Order.find({ user: userId }).populate(
-    'products.product'
-  );
+  const result = await Order.find({ user: userId })
+    .populate('products.product')
+    .sort({ createdAt: 'desc' });
   return result;
 };
 

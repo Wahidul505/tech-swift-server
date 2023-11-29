@@ -6,19 +6,6 @@ import sendResponse from '../../../shared/sendResponse';
 import { IProfile } from './profile.interface';
 import { ProfileService } from './profile.service';
 
-const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
-  const result = await ProfileService.insertIntoDB(
-    req.body,
-    req?.user as JwtPayload
-  );
-  sendResponse<IProfile>(res, {
-    success: true,
-    message: 'Profile created',
-    statusCode: httpStatus.OK,
-    data: result,
-  });
-});
-
 const getSingleFromDB = catchAsync(async (req: Request, res: Response) => {
   const userId = req?.params?.userId;
   const result = await ProfileService.getSingleFromDB(
@@ -40,7 +27,7 @@ const updateFromDB = catchAsync(async (req: Request, res: Response) => {
   const result = await ProfileService.updateFromDB(userId, user, payload);
   sendResponse<IProfile>(res, {
     success: true,
-    message: 'Profile updated',
+    message: 'Profile saved',
     statusCode: httpStatus.OK,
     data: result,
   });
@@ -58,7 +45,6 @@ const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
 });
 
 export const ProfileController = {
-  insertIntoDB,
   getSingleFromDB,
   updateFromDB,
   deleteFromDB,

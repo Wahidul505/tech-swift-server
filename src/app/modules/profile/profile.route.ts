@@ -5,11 +5,6 @@ import { ProfileController } from './profile.controller';
 
 const router = express.Router();
 
-router.post(
-  '/',
-  auth(ENUM_USER_ROLE.CUSTOMER, ENUM_USER_ROLE.ADMIN),
-  ProfileController.insertIntoDB
-);
 router.get(
   '/:userId',
   auth(ENUM_USER_ROLE.CUSTOMER, ENUM_USER_ROLE.ADMIN),

@@ -17,15 +17,6 @@ const http_status_1 = __importDefault(require("http-status"));
 const catchAsync_1 = __importDefault(require("../../../shared/catchAsync"));
 const sendResponse_1 = __importDefault(require("../../../shared/sendResponse"));
 const profile_service_1 = require("./profile.service");
-const insertIntoDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield profile_service_1.ProfileService.insertIntoDB(req.body, req === null || req === void 0 ? void 0 : req.user);
-    (0, sendResponse_1.default)(res, {
-        success: true,
-        message: 'Profile created',
-        statusCode: http_status_1.default.OK,
-        data: result,
-    });
-}));
 const getSingleFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
     const userId = (_a = req === null || req === void 0 ? void 0 : req.params) === null || _a === void 0 ? void 0 : _a.userId;
@@ -44,7 +35,7 @@ const updateFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, v
     const result = yield profile_service_1.ProfileService.updateFromDB(userId, user, payload);
     (0, sendResponse_1.default)(res, {
         success: true,
-        message: 'Profile updated',
+        message: 'Profile saved',
         statusCode: http_status_1.default.OK,
         data: result,
     });
@@ -60,7 +51,6 @@ const deleteFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, v
     });
 }));
 exports.ProfileController = {
-    insertIntoDB,
     getSingleFromDB,
     updateFromDB,
     deleteFromDB,

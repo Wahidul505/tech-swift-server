@@ -27,8 +27,9 @@ const register = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     payload.role = user_1.ENUM_USER_ROLE.CUSTOMER;
     const result = yield user_model_1.User.create(payload);
     const userInfo = {
-        role: result.role,
-        userId: result._id,
+        role: result === null || result === void 0 ? void 0 : result.role,
+        userId: result === null || result === void 0 ? void 0 : result._id,
+        email: result === null || result === void 0 ? void 0 : result.email,
     };
     const token = jwtHelpers_1.jwtHelpers.createToken(userInfo, config_1.default.jwt.secret, config_1.default.jwt.expires_in);
     return token;
@@ -42,8 +43,9 @@ const login = (payload) => __awaiter(void 0, void 0, void 0, function* () {
         throw new ApiError_1.default(http_status_1.default.UNAUTHORIZED, 'Wrong Password');
     }
     const userInfo = {
-        role: isUserExist.role,
-        userId: isUserExist._id,
+        role: isUserExist === null || isUserExist === void 0 ? void 0 : isUserExist.role,
+        userId: isUserExist === null || isUserExist === void 0 ? void 0 : isUserExist._id,
+        email: isUserExist === null || isUserExist === void 0 ? void 0 : isUserExist.email,
     };
     const token = jwtHelpers_1.jwtHelpers.createToken(userInfo, config_1.default.jwt.secret, config_1.default.jwt.expires_in);
     return token;

@@ -105,7 +105,7 @@ const getAllFromDB = (filters, paginationOptions) => __awaiter(void 0, void 0, v
     const whereConditions = andConditions.length > 0 ? { $and: andConditions } : {};
     const result = yield order_model_1.Order.find(whereConditions)
         .populate('products.product')
-        .sort(sortConditions)
+        .sort(sortConditions || { createdAt: 'desc' })
         .skip(skip)
         .limit(limit);
     const total = yield order_model_1.Order.countDocuments(whereConditions);
@@ -126,7 +126,9 @@ const getSingleFromDB = (id) => __awaiter(void 0, void 0, void 0, function* () {
 });
 const getMyOrders = (userId, user) => __awaiter(void 0, void 0, void 0, function* () {
     (0, checkUserMatched_1.checkUserMatch)(userId, user === null || user === void 0 ? void 0 : user.userId);
-    const result = yield order_model_1.Order.find({ user: userId }).populate('products.product');
+    const result = yield order_model_1.Order.find({ user: userId })
+        .populate('products.product')
+        .sort({ createdAt: 'desc' });
     return result;
 });
 const getMySingleOrder = (id, user) => __awaiter(void 0, void 0, void 0, function* () {

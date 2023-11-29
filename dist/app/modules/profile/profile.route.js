@@ -9,7 +9,6 @@ const user_1 = require("../../../enums/user");
 const auth_1 = __importDefault(require("../../middlewares/auth"));
 const profile_controller_1 = require("./profile.controller");
 const router = express_1.default.Router();
-router.post('/', (0, auth_1.default)(user_1.ENUM_USER_ROLE.CUSTOMER, user_1.ENUM_USER_ROLE.ADMIN), profile_controller_1.ProfileController.insertIntoDB);
 router.get('/:userId', (0, auth_1.default)(user_1.ENUM_USER_ROLE.CUSTOMER, user_1.ENUM_USER_ROLE.ADMIN), profile_controller_1.ProfileController.getSingleFromDB);
 router.patch('/:userId', (0, auth_1.default)(user_1.ENUM_USER_ROLE.CUSTOMER, user_1.ENUM_USER_ROLE.ADMIN), profile_controller_1.ProfileController.updateFromDB);
 router.delete('/:userId', (0, auth_1.default)(user_1.ENUM_USER_ROLE.CUSTOMER, user_1.ENUM_USER_ROLE.ADMIN), profile_controller_1.ProfileController.deleteFromDB);
