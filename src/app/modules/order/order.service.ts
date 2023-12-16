@@ -155,10 +155,31 @@ const getMySingleOrder = async (
   return result;
 };
 
+const proceedOrder = async (id: string): Promise<IOrder | null | undefined> => {
+  const exist = await Order.findById(id);
+
+  if (exist?.status === 'delivered') {
+    throw new ApiError(
+      httpStatus.BAD_REQUEST,
+      'Order status cannot be updated'
+    );
+  } else {
+    if (exist?.status === 'confirmed') {
+      const result = await Order.findByIdAndUpdate(id, { status: 'shipped' });
+      return result;
+    }
+    if (exist?.status === 'shipped') {
+      const result = await Order.findByIdAndUpdate(id, { status: 'delivered' });
+      return result;
+    }
+  }
+};
+
 export const OrderService = {
   insertIntoDB,
   getAllFromDB,
   getSingleFromDB,
   getMyOrders,
   getMySingleOrder,
+  proceedOrder,
 };

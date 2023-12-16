@@ -26,6 +26,7 @@ const updateFromDB = (userId, user, payload) => __awaiter(void 0, void 0, void 0
     const isProfileExist = yield profile_model_1.Profile.findOne({ user: userId });
     let result;
     if (!isProfileExist) {
+        console.log(payload);
         result = yield profile_model_1.Profile.create(payload);
     }
     (0, checkUserMatched_1.checkUserMatch)(user === null || user === void 0 ? void 0 : user.userId, isProfileExist === null || isProfileExist === void 0 ? void 0 : isProfileExist.user);

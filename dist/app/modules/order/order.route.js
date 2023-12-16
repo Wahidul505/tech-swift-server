@@ -14,4 +14,5 @@ router.get('/my-order-single/:id', (0, auth_1.default)(user_1.ENUM_USER_ROLE.CUS
 router.post('/', (0, auth_1.default)(user_1.ENUM_USER_ROLE.CUSTOMER), order_controller_1.OrderController.insertIntoDB);
 router.get('/', (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN), order_controller_1.OrderController.getAllFromDB);
 router.get('/:id', (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN), order_controller_1.OrderController.getSingleFromDB);
+router.patch('/:id', (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN), order_controller_1.OrderController.proceedOrder);
 exports.OrderRoutes = router;

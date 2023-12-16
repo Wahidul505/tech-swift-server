@@ -14,8 +14,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserController = void 0;
 const http_status_1 = __importDefault(require("http-status"));
+const pagination_1 = require("../../../constants/pagination");
 const catchAsync_1 = __importDefault(require("../../../shared/catchAsync"));
+const pick_1 = __importDefault(require("../../../shared/pick"));
 const sendResponse_1 = __importDefault(require("../../../shared/sendResponse"));
+const user_constants_1 = require("./user.constants");
 const user_service_1 = require("./user.service");
 const register = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const result = yield user_service_1.UserService.register(req.body);
@@ -35,7 +38,20 @@ const login = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, 
         data: result,
     });
 }));
+const getAllFromDB = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const filters = (0, pick_1.default)(req.query, user_constants_1.userFilterableFields);
+    const paginationOptions = (0, pick_1.default)(req.query, pagination_1.paginationFields);
+    const result = yield user_service_1.UserService.getAllFromDB(filters, paginationOptions);
+    (0, sendResponse_1.default)(res, {
+        success: true,
+        message: 'Users fetched',
+        statusCode: http_status_1.default.OK,
+        meta: result.meta,
+        data: result.data,
+    });
+}));
 exports.UserController = {
     register,
     login,
+    getAllFromDB,
 };

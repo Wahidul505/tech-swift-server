@@ -73,10 +73,21 @@ const getMySingleOrder = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const proceedOrder = catchAsync(async (req: Request, res: Response) => {
+  const result = await OrderService.proceedOrder(req.params.id);
+  sendResponse<IOrder>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Order status updated',
+    data: result,
+  });
+});
+
 export const OrderController = {
   insertIntoDB,
   getAllFromDB,
   getSingleFromDB,
   getMyOrders,
   getMySingleOrder,
+  proceedOrder,
 };

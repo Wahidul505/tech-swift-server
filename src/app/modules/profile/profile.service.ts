@@ -23,6 +23,7 @@ const updateFromDB = async (
 
   let result;
   if (!isProfileExist) {
+    console.log(payload);
     result = await Profile.create(payload);
   }
   checkUserMatch(user?.userId, isProfileExist?.user);

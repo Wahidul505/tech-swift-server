@@ -23,4 +23,6 @@ router.get('/', auth(ENUM_USER_ROLE.ADMIN), OrderController.getAllFromDB);
 
 router.get('/:id', auth(ENUM_USER_ROLE.ADMIN), OrderController.getSingleFromDB);
 
+router.patch('/:id', auth(ENUM_USER_ROLE.ADMIN), OrderController.proceedOrder);
+
 export const OrderRoutes = router;

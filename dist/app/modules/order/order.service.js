@@ -135,10 +135,27 @@ const getMySingleOrder = (id, user) => __awaiter(void 0, void 0, void 0, functio
     const result = yield order_model_1.Order.findOne({ _id: id, user: user === null || user === void 0 ? void 0 : user.userId }).populate('products.product');
     return result;
 });
+const proceedOrder = (id) => __awaiter(void 0, void 0, void 0, function* () {
+    const exist = yield order_model_1.Order.findById(id);
+    if ((exist === null || exist === void 0 ? void 0 : exist.status) === 'delivered') {
+        throw new ApiError_1.default(http_status_1.default.BAD_REQUEST, 'Order status cannot be updated');
+    }
+    else {
+        if ((exist === null || exist === void 0 ? void 0 : exist.status) === 'confirmed') {
+            const result = yield order_model_1.Order.findByIdAndUpdate(id, { status: 'shipped' });
+            return result;
+        }
+        if ((exist === null || exist === void 0 ? void 0 : exist.status) === 'shipped') {
+            const result = yield order_model_1.Order.findByIdAndUpdate(id, { status: 'delivered' });
+            return result;
+        }
+    }
+});
 exports.OrderService = {
     insertIntoDB,
     getAllFromDB,
     getSingleFromDB,
     getMyOrders,
     getMySingleOrder,
+    proceedOrder,
 };
